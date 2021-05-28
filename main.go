@@ -1,7 +1,7 @@
 package main
 
-import v2 "facec.edu.br/jokenpo/v2"
+import current "facec.edu.br/jokenpo/v3"
 
 func main() {
-	v2.RunApplication()
+	current.RunApplication()
 }
