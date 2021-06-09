@@ -7,19 +7,17 @@ import (
 
 // Nessa versão evoluimos nosso jogo para usar controle de fluxo (if ou switch)
 func RunApplication() {
-	for {
-		fmt.Println("Iniciando JoKenPo: Versão 3")
+	fmt.Println("Iniciando JoKenPo: Versão 3")
 
-		jogador1 := identificarJogador(1)
-		jogador2 := identificarJogador(2)
-		escolha1 := escolherSinal(jogador1)
-		escolha2 := escolherSinal(jogador2)
+	jogador1 := identificarJogador(1)
+	jogador2 := identificarJogador(2)
+	escolha1 := escolherSinal(jogador1)
+	escolha2 := escolherSinal(jogador2)
 
-		definirVencedor(escolha1, escolha2, jogador1, jogador2)
+	definirVencedor(escolha1, escolha2, jogador1, jogador2)
 
-		imprimirEscolha(jogador1, escolha1)
-		imprimirEscolha(jogador2, escolha2)
-	}
+	imprimirEscolha(jogador1, escolha1)
+	imprimirEscolha(jogador2, escolha2)
 }
 
 func identificarJogador(numeroJogador int) string {
